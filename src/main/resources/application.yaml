@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: demo-config
+  config:
+    import: /app/config/demo-config.yaml

@@ -1,0 +1,14 @@
+# Use root/mysqlpass as user/password credentials
+version: '3.8'
+
+services:
+  demo:
+    image: demo-config
+    configs:
+      - source: demo-config
+        target: /app/config/demo-config.yaml
+
+configs:
+  demo-config:
+    external: true
+#    file: ./demo-config.yaml
